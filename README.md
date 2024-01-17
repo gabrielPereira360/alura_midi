@@ -1,4 +1,4 @@
-# Olá, bem vindo ao projeto Alura Midi desenvolvido como forma de aprendizado para o desenvolvimento de funções por meio da lingaugem Javascript.
+# Olá, bem vindo ao projeto Alura Midi desenvolvido como forma de aprendizado para o desenvolvimento de funções por meio da linguagem Javascript.
 
 ## Prévias
 - Desktop: 
