@@ -1,14 +1,16 @@
 // Obtem todos os elementos dos botões
 const listaDeTeclas = document.querySelectorAll('.tecla');
 
-function  tocaSomPom() {
-    document.querySelector('#som_tecla_pom').play();
+function  tocaSom(idElementoAudio) {
+    document.querySelector(idElementoAudio).play(); // Faz a reprodução do som
 }
 
 // Percorrer a Lista
-let i = 0;
-while (i < listaDeTeclas.length){
-    listaDeTeclas[i].onclick = tocaSomPom;
-    i++;
-    console.log(i);
+for (let i = 0; i < listaDeTeclas.length; i++){
+    const tecla = listaDeTeclas[i]; // Configura a tecla
+    const instrumento = tecla.classList.item(1); // Configura o instrumento
+    const idAudio = `#som_${instrumento}`; // Configura o id do Audio completo
+    tecla.onclick = function (){
+        tocaSom(idAudio); // toca o som do instrumento de acordo com a tecla
+    };
 }
